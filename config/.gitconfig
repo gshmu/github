@@ -1,0 +1,35 @@
+[user]
+	name = gshmu
+	email = mhohai@aim.com
+[http]
+	proxy = socks5://192.168.1.14:1080
+[https]
+	proxy = socks5://192.168.1.14:1080
+[pull]
+	default = current
+[push]
+	default = current
+[alias]
+	br = branch
+	co = checkout
+	st = status
+	ci = commit
+	df = diff
+	am = commit -a -m
+	last = log -1 HEAD
+
+	l = log --graph --color
+	ll = log --oneline --decorate --color
+	rb = rebase
+	dci = dcommit
+	sbi = submodule init
+	sbu = submodule update
+	sbp = submodule foreach git pull
+	sbc = submodule foreach git checkout master
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+[core]
+	excludesfile = /home/saas/.config/.gitignore_global
