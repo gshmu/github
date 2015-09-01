@@ -2,9 +2,9 @@
 	name = gshmu
 	email = mhohai@aim.com
 [http]
-	proxy = socks5://192.168.1.14:1080
+	proxy = socks5://127.0.0.1:1080
 [https]
-	proxy = socks5://192.168.1.14:1080
+	proxy = socks5://127.0.0.1:1080
 [pull]
 	default = current
 [push]

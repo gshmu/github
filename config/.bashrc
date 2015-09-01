@@ -112,8 +112,14 @@ alias epiao='cd ~/pyEnv/epiao/epiao.piaoshifu.cn/'
 alias pic='cd ~/Pictures'
 
 alias clear='clear && history -c && history -r'
+alias pyc='find . -type f -name "*.pyc" -exec rm {} \;'
+alias 503='ssh 10.5.0.3 -i ~/.ssh/id_rsa'
+alias 514='ssh 10.5.0.14 -i ~/.ssh/id_rsa'
 # alias gshmu='/usr/bin/sudo'
 # alias sudo='echo No SuperUser'
+alias rc.d='find /etc/rc?.d | grep '
+alias ak='tee /dev/tty | awk '\''{print $2}'\'' | xargs kill -9'
+alias npv='sp ssh_mux_10\\.[67]\\.'
 
 function gn(){
 	if [ -z $1 ]; then
@@ -136,8 +142,20 @@ function sp(){
 	if [ -z $1 ]; then
 		echo "Need Process Name!"
 	else
-		ps -auxww | grep "$1" | grep -v grep
+		ps auxww | grep "$1" | grep -v grep
 	fi
+}
+
+function tpa(){
+
+	if [ -z $1 ]; then
+		echo "super apt version"
+	else
+		set -x;
+		sudo apt-get --yes remove linux-headers-$1 linux-headers-$1-generic linux-image-$1-generic linux-image-extra-$1-generic linux-signed-image-$1-generic
+		set +x;
+	fi
+
 }
 
 . /usr/share/bash-completion/completions/complete
@@ -182,3 +200,4 @@ __git_complete go _git_checkout
 __git_complete gf _git_fetch
 
 __git_complete gn _git_checkout
+
