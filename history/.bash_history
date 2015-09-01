@@ -476,3 +476,85 @@ ll /var/lib/redis/
 sudo mkdir /media/saas/d191cfc9-f3dd-4a42-aab4-fe0b3a72748f/dump/
 sudo cp -r /var/lib/redis/dump.rdb /media/saas/d191cfc9-f3dd-4a42-aab4-fe0b3a72748f/dump/dump.rdb
 sudo cp dumps/saas_all.sql /media/saas/d191cfc9-f3dd-4a42-aab4-fe0b3a72748f/dump/saas_all.sql
+##### ##### #####
+sudo add-apt-repository ppa:lainme/pidgin-lwqq
+sudo apt-get update
+sudo apt-get install ibus-rime pidgin pidgin-lwqq python2.7-dev synaptic python-pip git python3-dev python3-pip
+sudo reboot
+sudo pip3 install --upgrade pycrypto keyring
+sh home_bin/pycharm/bin/pycharm.sh 
+sudo pip install shadowsocks
+ifconfig 
+sudo apt-get install vim
+sudo vim /etc/default/grub 
+sudo update-grub
+sudo vim /etc/hostname
+sudo vim /etc/hosts
+ecryptfs-unwrap-passphrase 
+convmv -r -f utf8 -t iso88591 * --notest --nosmart && convmv -r -f gbk -t utf8 * --notest --nosmart
+# sudo freshclam 
+clamscan Downloads/
+sudo apt-get install libmysqld-dev
+ll /dev/sd*
+dd if=/dev/sda of=win7.mbr bs=512 count=1
+sudo chmod o+rw /dev/sda 
+dd if=/dev/sda of=win7.mbr bs=512 count=1
+sudo chmod o+rw /dev/sda1 /dev/sda2
+vboxmanage internalcommands createrawvmdk -filename /home/gshmu/VirtualBox\ VMs/Win7HD.vmdk -rawdisk /dev/sda -partitions 1,2 -mbr VirtualBox\ VMs/win7.mbr -relative
+sudo mkdir /home/public
+sudo chown gshmu:gshmu /home/public/
+sudo chmod 777 /home/public/
+/etc/init.d/vboxdrv setup
+sudo /etc/init.d/vboxdrv setup
+sudo vim /var/log/syslog
+sudo chmod o+rw /dev/sda1 /dev/sda2
+sudo chown root:root /etc/init.d/iDo.sh 
+java -version
+sudo vim /etc/sysctl.conf 
+sudo sysctl -p
+sudo apt-get install oracle-java7-installer oracle-java7-set-default 
+sh home_bin/pycharm/bin/pycharm.sh 
+sudo apt-get install python-virtualenv
+python manage.py syncdb
+ls /etc/init.d/iDo.sh 
+cd /etc/init.d
+sudo update-rc.d iDo.sh defaults 98
+sudo gpasswd -a $USER fuse
+sudo vim /etc/fstab
+sudo vim /etc/fstab
+sudo vim /etc/init.d/iDo.sh 
+chmod a+x home_bin/iRun.sh 
+VBoxManage --version
+sudo /etc/init.d/vboxdrv setup
+convmv -r -f utf8 -t iso88591 * --notest --nosmart && convmv -r -f gbk -t utf8 * --notest --nosmart
+cat /var/log/syslog
+sudo dd if=/dev/zero of=swap bs=1024 count=8000000
+sudo mkswap -f swap 
+sudo swapon swap 
+sudo vim /etc/fstab
+sudo apt-get install xdotool wmctrl 
+sudo apt-get install xclip 
+curl -I http://www.rapid7.com/db/vulnerabilities/http-cookie-http-only-flag
+sudo killall unity-panel-service
+sh ~/update-kali.sh 
+ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+. ../env/bin/activate
+sudo apt-get install meld
+sudo apt-get install tmux shutter mtpaint byobu
+~/home_bin/wkhtmltopdf-amd64 aherf.html out.pdf
+sudo apt-get install nmap
+sh packaging.sh 
+sudo pip install celery
+fusermount -u ./rBox/rs-
+xrandr
+sudo dmidecode|grep -A16 "Memory Device"
+redis-cli -h 10.7.53.12
+chromeos-apk --scale /home/gshmu/Downloads/cmbc.apk --name cn.com.cmbc.mbank.android --tablet
+sudo dpkg -P google-chrome-stable 
+sudo tail -f /var/log/syslog
+killall unity-scope-home
+sudo pip3 install pyinotify
+update-rc.d 
+vim /etc/NetworkManager/system-connections/VPN++ 
+nmcli con 
+##### ##### #####
