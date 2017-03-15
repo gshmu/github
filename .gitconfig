@@ -1,0 +1,38 @@
+[user]
+	name = gshmu
+	email = mhohai@aim.com
+[http]
+	# proxy = socks5://127.0.0.1:1080
+	# proxy = https://127.0.0.1:8088
+[https]
+	# proxy = socks5://127.0.0.1:1080
+	# proxy = https://127.0.0.1:8088
+[git]
+	proxy = socks5://127.0.0.1:1080
+[ssh]
+	proxy = socks5://127.0.0.1:1080
+[pull]
+	default = current
+[push]
+	default = current
+[alias]
+	last = log -1 HEAD
+
+	l = log --graph --color
+	ll = log --oneline --decorate --color
+	rb = rebase
+	dci = dcommit
+	sbi = submodule init
+	sbu = submodule update
+	sbp = submodule foreach git pull
+	sbc = submodule foreach git checkout master
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+[core]
+	excludesfile = /home/gshmu/.config/.gitignore
+	gitproxy = /home/gshmu/home_bin/git_proxy_command.sh
+[http]
+	sslVerify = false
