@@ -165,6 +165,9 @@ export PS1="\[\e[00;37m\]\n\[\e[0m\]\[\e[00;34m\]^_^\[\e[0m\]\[\e[01;31m\]:\[\e[
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+# mac
+# bind '"<up>":history-search-backward'
+# bind '"<down>":history-search-forward'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
