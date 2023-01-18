@@ -1,0 +1,50 @@
+[user]
+	name = gshmu
+	email = mhohai@aim.com
+[includeIf "gitdir:~/aoe/"]
+	path = ~/.git-lg
+[includeIf "gitdir:~/aoe/orz/"]
+	path = ~/.git-gshmu
+
+[http]
+	sslVerify = false
+	# proxy = http://127.0.0.1:8123
+[https]
+	sslVerify = false
+	# proxy = http://127.0.0.1:8123
+[branch]
+	remote = origin
+	autosetuprebase = always
+[push]
+	default = simple
+[pull]
+	ff = true
+	octopus = true
+	# twohead = true
+[alias]
+	last = log -1 HEAD
+	l = log --graph --color
+	ll = log --oneline --decorate --color
+	st = status
+	co = checkout
+	rb = rebase
+	dci = dcommit
+	sbi = submodule init
+	sbu = submodule update
+	sbp = submodule foreach git pull
+	sbc = submodule foreach git checkout master
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+[core]
+	excludesfile = /home/gshmu/.gitignore
+	autocrlf = input
+	editor = vim
+	hooksPath = /home/gshmu/.git-hooks
+	# gitproxy = git-proxy  # /Users/gshmu/git_proxy_command.sh
+[github]
+	user = gshmu
+[pager]
+	branch = false

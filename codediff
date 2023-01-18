@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+cd /home/gshmu/aoe
+cd AutoDoc 
+git stash && git pull -r
+charm .
+
+
+cd -
+cd trident
+git stash && git pull -r
+charm .
